@@ -35,77 +35,221 @@
   <summary>Нажмите для просмотра</summary>
 
 ## Ключевые слова
-* функция - def
+*  функция - def
+ 
 * класс - class
-* если - if
-* иначе_если - elif
-* иначе - else
+
+*  если - if
+
+*  иначе_если - elif
+
+*  иначе - else
+
 * пока - while
-* для - for
+
+*  для - for
+
 * в - in
-* вернуть - return
+
+*  вернуть - return
+
 * вывод - print
+
 * ввод - input
+
 * выход - break
+
 * пропустить - continue
+
 * ничего - pass
+
 * утверждать - assert
+
 * удалить - del
 
+* глобальный - global
+
+* нелокальный - nonlocal
+
+* выдать - yield
+
+* лямбда - lambda
+
+* асинхронный - async
+
+* ждать - await
+
+* совпадение - match
+
+* случай - case
+
 ## Импорты
+
 * импорт - import
+
 * из - from
+
 * как - as
 
 ## Обработка исключений
+
 * попробовать - try
+
 * перехватить - except
+
 * наконец - finally
+
 * поднять - raise
 
 ## ООП и Контекст
+
 * это - self
+
 * с - with
 
 ## Логика и значения
+
 * и - and
+
 * или - or
+
 * не - not
+
+* является - is
+
 * Истина - True
+
 * Ложь - False
+
 * Пусто - None
 
 ## Встроенные функции и типы
-* длина - len
-* диапазон - range
-* число - int
-* дробное - float
-* строка - str
-* список - list
-* словарь - dict
-* множество - set
-* кортеж - tuple
-* булево - bool
-* тип - type
-* сумма - sum
-* минимум - min
-* максимум - max
-* абсолютное - abs
-* округлить - round
-* сортировать - sorted
-* открыть - open
-* перечислить - enumerate
-* объединить - zip
 
-## Исключения / Ошибки
+* длина - len
+
+* диапазон - range
+
+* число - int
+
+* дробное - float
+
+* строка - str
+
+* список - list
+
+* словарь - dict
+
+* множество - set
+
+* кортеж - tuple
+
+* булево - bool
+
+* тип - type
+
+* сумма - sum
+
+*  минимум - min
+
+*  максимум - max
+
+* абсолютное - abs
+
+*  округлить - round
+
+* сортировать - sorted
+
+*  открыть - open
+
+* перечислить - enumerate
+
+*  объединить - zip
+
+* все - all
+
+* любой - any
+
+*  преобразовать - map
+
+*  фильтр - filter
+
+* является_экземпляром - isinstance
+
+* является_подклассом - issubclass
+
+* символ - chr
+
+* код_символа - ord
+
+* справка - help
+
+* атрибуты - dir
+
+## Исключения и ошибки
+
 * Исключение - Exception
+
 * ОшибкаЗначения - ValueError
+
 * ОшибкаТипа - TypeError
+
 * ОшибкаИмени - NameError
+
 * ОшибкаИндекса - IndexError
+
 * ОшибкаКлюча - KeyError
 
+* ОшибкаДеленияНаНоль - ZeroDivisionError
+
+* ОшибкаФайлНеНайден - FileNotFoundError
+
+* ОшибкаАтрибута - AttributeError
+
+* ОшибкаИмпорта - ImportError
+
+* ОшибкаМодульНеНайден - ModuleNotFoundError
+
+* ПрерываниеКлавиатуры - KeyboardInterrupt
+
+* ОшибкаСинтаксиса - SyntaxError
+
+* ОшибкаСнега - RuntimeError
+
 </details>
+
+---
+## 🔌 Настройка в Visual Studio Code
+
+* Для комфортной разработки вы можете установить официальное расширение **Rupy** прямо из VS Code:
+
+1. Откройте VS Code.
+2. Перейдите во вкладку **Расширения** (`Ctrl + Shift + X`).
+3. Введите в поиске **Rupy**.
+4. Нажмите **Установить**.
+
+ Расширение обеспечивает подсветку синтаксиса для файлов `.rupy`
+
+* Что бы запускать код по кнопке прямо в Visual Studio Code нужно:
+1. Открыть VS Code.
+2. Перейти во вкладку **Расширения** (`Ctrl + Shift + X`).
+3. Ввести в поиске **Code Runner**.
+4. Нажать **Установить**.
+5. Нажать сочетание клавиш (`Ctrl + Shift + P`)
+6. Вписать в строку: Открыть пользовательские настройки (JSON)
+7. В открывшемся файле settings.json замените всё на:
+```rupy
+{
+  "explorer.confirmDelete": false,
+  "security.workspace.trust.untrustedFiles": "open",
+  "liveServer.settings.donotShowInfoMsg": true,
+  "code-runner.runInTerminal": true,
+  "code-runner.executorMap": {
+    "javascript": "node",
+    "python": "python -u",
+    "rupy": "rupy"
+  }
+}
+```
 
 ---
 
